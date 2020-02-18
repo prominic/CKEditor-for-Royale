@@ -1,0 +1,13 @@
+<royale-config>
+    <js-output-optimization>
+        <optimization>skipFunctionCoercions</optimization>
+    </js-output-optimization>
+    <compiler>
+        <targets>
+            <target>JSRoyale</target>
+        </targets>
+        <js-external-library-path append="true">
+		<path-element>../../../libs/ckeditor.swc</path-element>
+        </js-external-library-path>
+    </compiler>
+</royale-config>

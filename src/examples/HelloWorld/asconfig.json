@@ -1,0 +1,19 @@
+{
+  "config": "royale",
+  "compilerOptions": {
+      "debug": false,
+      "targets": ["JSRoyale"],
+      "source-map": false,
+      "source-path": ["src"],
+      "html-template": "index-template.html",
+      "js-compiler-option": [
+          "--skip_type_inference"
+      ],
+      "js-external-library-path": ["libs"],
+  },
+  "copySourcePathAssets": true,
+  "files":
+  [
+      "src/Examples.mxml"
+  ]
+}
