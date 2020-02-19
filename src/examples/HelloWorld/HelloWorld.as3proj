@@ -21,7 +21,7 @@
   <moonshineResourcePaths></moonshineResourcePaths>
   <moonshineNativeExtensionPaths></moonshineNativeExtensionPaths>
   <build>
-    <option additional="-theme=${royalelib}/themes/JewelTheme/src/main/resources/defaults.css -html-template=src/resources/jewel-index-template.html -debug=true"/>
+    <option additional="-theme=${royalelib}/themes/JewelTheme/src/main/resources/defaults.css -html-template=src/resources/jewel-index-template.html -js-external-library-path+=libs/ckeditor.swc -debug=true"/>
     <option accessible="False"/>
     <option useNetwork="True"/>
     <option locale=""/>
@@ -59,9 +59,7 @@
   </mavenBuild>
   <includeLibraries></includeLibraries>
   <libraryPaths></libraryPaths>
-  <externalLibraryPaths>
-    <element path="libs/ckeditor.swc"/>
-  </externalLibraryPaths>
+  <externalLibraryPaths></externalLibraryPaths>
   <rslPaths></rslPaths>
   <intrinsics>
     <element path="Library/AS3/frameworks/Flex4"/>

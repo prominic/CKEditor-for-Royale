@@ -1,4 +1,4 @@
 bin-debug
 bin-release
 bin
-src\examples\HelloWorld\obj
+src\examples\HelloWorld\obj\*.*
