@@ -6,7 +6,7 @@
     <j:ApplicationMainContent hasTopAppBar="true" hasFooterBar="true" selectedContent="content">
        <j:SectionContent name="content">
 			<j:VGroup>
-				<local:CKEditor />
+				<local:CKEditor width="600" height="400" />
 			</j:VGroup>
 	   </j:SectionContent>
     </j:ApplicationMainContent>
