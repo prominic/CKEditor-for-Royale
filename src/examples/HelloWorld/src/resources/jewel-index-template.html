@@ -14,32 +14,17 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 -->
+<!DOCTYPE html>
 <html>
-    <head>
-        <META HTTP-EQUIV="Pragma" CONTENT="no-cache"> 
-        <META HTTP-EQUIV="Expires" CONTENT="-1"> 
-    </head>
-    <body>
-    <script>
-        function processUrl()
-        {
-
-            var pos = url.indexOf("?");
-            url = pos != -1 ? url.substr(pos + 1) : "";
-            if (!parent._ie_firstload) {
-                parent.BrowserHistory.setBrowserURL(url);
-                try {
-                    parent.BrowserHistory.browserURLChange(url);
-                } catch(e) { }
-            } else {
-                parent._ie_firstload = false;
-            }
-        }
-
-        var url = document.location.href;
-        processUrl();
-        document.write(encodeURIComponent(url));
-    </script>
-    Hidden frame for Browser History support.
-    </body>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="Custom Template for injecting custom style CSS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="${application}.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+${head}
+</head>
+<body>
+${body}
+</body>
 </html>

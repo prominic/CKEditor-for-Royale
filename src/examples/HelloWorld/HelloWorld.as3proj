@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+  <output>
+    <movie fps="60"/>
+    <movie height="600"/>
+    <movie disabled="False"/>
+    <movie background="#FFFFFF"/>
+    <movie path="bin-debug/Examples.swf"/>
+    <movie width="800"/>
+    <movie platform="Flash Player"/>
+    <movie version="11"/>
+    <movie input=""/>
+  </output>
+  &lt;!-- Other classes to be compiled into your SWF --&gt;
+  <jsOutput>
+    <option path=""/>
+  </jsOutput>
+  <classpaths>
+    <class path="src"/>
+  </classpaths>
+  <moonshineResourcePaths></moonshineResourcePaths>
+  <moonshineNativeExtensionPaths></moonshineNativeExtensionPaths>
+  <build>
+    <option additional="-theme=${royalelib}/themes/JewelTheme/src/main/resources/defaults.css -html-template=src/resources/jewel-index-template.html -debug=true"/>
+    <option accessible="False"/>
+    <option useNetwork="True"/>
+    <option locale=""/>
+    <option allowSourcePathOverlap="False"/>
+    <option useResourceBundleMetadata="True"/>
+    <option strict="True"/>
+    <option warnings="True"/>
+    <option es="False"/>
+    <option verboseStackTraces="False"/>
+    <option loadConfig=""/>
+    <option linkReport=""/>
+    <option customSDK=""/>
+    <option optimize="False"/>
+    <option staticLinkRSL="False"/>
+    <option showActionScriptWarnings="True"/>
+    <option compilerConstants=""/>
+    <option showBindingWarnings="True"/>
+    <option sourceMap="True"/>
+    <option benchmark="False"/>
+    <option showDeprecationWarnings="True"/>
+    <option antBuildPath="build/build.xml"/>
+    <option showUnusedTypeSelectorWarnings="True"/>
+  </build>
+  <mavenBuild>
+    <option mavenBuildPath=""/>
+    <option settingsFilePath=""/>
+    <option commandLine=""/>
+    <actions>
+      <action actionName="Build" action="install"/>
+      <action actionName="Clean and package" action="clean package"/>
+      <action actionName="Clean" action="clean"/>
+      <action actionName="Clean and Build" action="clean install"/>
+      <action actionName="Exploded" action="war:exploded"/>
+    </actions>
+  </mavenBuild>
+  <includeLibraries></includeLibraries>
+  <libraryPaths></libraryPaths>
+  <externalLibraryPaths>
+    <element path="libs/ckeditor.swc"/>
+  </externalLibraryPaths>
+  <rslPaths></rslPaths>
+  <intrinsics>
+    <element path="Library/AS3/frameworks/Flex4"/>
+    <element path="Library\AS3\frameworks\Flex4"/>
+  </intrinsics>
+  <library></library>
+  <compileTargets>
+    <compile path="src/Examples.mxml"/>
+  </compileTargets>
+  <hiddenPaths></hiddenPaths>
+  <preBuildCommand>null</preBuildCommand>
+  <postBuildCommand alwaysRun="False">null</postBuildCommand>
+  <trustSVNCertificate>False</trustSVNCertificate>
+  <options>
+    <option testMovieCommand=""/>
+    <option isExportedToExistingSource="False"/>
+    <option defaultBuildTargets=""/>
+    <option visualEditorExportPath=""/>
+    <option testMovie=""/>
+    <option showHiddenPaths="False"/>
+    <option isRoyale="True"/>
+    <option isPrimeFacesVisualEditor="False"/>
+  </options>
+  <moonshineRunCustomization>
+    <option urlToLaunch=""/>
+    <option projectType="2"/>
+    <option customUrlToLaunch=""/>
+    <option deviceSimulator="null"/>
+    <option targetPlatform="5"/>
+    <option launchMethod="Simulator"/>
+    <deviceSimulator>null</deviceSimulator>
+    <certAndroid>null</certAndroid>
+    <certIos>null</certIos>
+    <certIosProvisioning>null</certIosProvisioning>
+  </moonshineRunCustomization>
+</project>

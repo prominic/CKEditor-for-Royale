@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<j:ApplicationResponsiveView xmlns:fx="http://ns.adobe.com/mxml/2009"
+    						 xmlns:j="library://ns.apache.org/royale/jewel"
+    						 xmlns:local="*">
+
+    <j:ApplicationMainContent hasTopAppBar="true" hasFooterBar="true" selectedContent="content">
+       <j:SectionContent name="content">
+			<j:VGroup>
+				<local:CKEditor />
+			</j:VGroup>
+	   </j:SectionContent>
+    </j:ApplicationMainContent>
+</j:ApplicationResponsiveView>
