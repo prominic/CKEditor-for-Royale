@@ -4,8 +4,7 @@ package
 
 	COMPILE::JS {
 		import CKEDITOR.editor;
-		import org.apache.royale.core.WrappedHTMLElement;
-		import org.apache.royale.html.util.addElementToWrapper;
+		import org.apache.royale.html.elements.Div;
 	}
 
 	COMPILE::SWF
@@ -26,21 +25,18 @@ package
 			super();
 		}
 
-		override protected function createElement():org.apache.royale.core.WrappedHTMLElement
-		{
-			addElementToWrapper(this,'textarea');
-			positioner.style.display = 'block';
-			return element;
-		}
-
 
 		private var myEditor:editor;
 
 		override public function addedToParent():void 
 		{ 
 			super.addedToParent(); 
-			myEditor = CKEDITOR.replace(this.element);
+			var div:Div = new Div();
+			div.percentHeight = 100;
+			div.percentWidth = 100;
+			div.element.setAttribute("contenteditable", true);
+			CKEDITOR.config.startupFocus = true;
+			addElement(div);
 		} 
-
 	}
 }

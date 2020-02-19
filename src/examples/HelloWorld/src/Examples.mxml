@@ -11,7 +11,7 @@
 		<js:View>
 			<js:VContainer>
 				<js:Label text="Hello World!" />
-				<local:CKEditor id="myEditor" width="400" height="400"/>
+				<local:CKEditor id="myEditor" width="600" height="400"/>
 			</js:VContainer>
 		</js:View>
 	</js:initialView>
