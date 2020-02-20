@@ -4,6 +4,11 @@
     						 xmlns:local="*">
 
 	<fx:Script><![CDATA[			
+		private function init():void
+		{
+			myEditor.data = "<b>this is an example</b>";
+		}
+
 		private function getData():void
 		{
 			alert("data: " + myEditor.data);
@@ -13,7 +18,10 @@
        <j:SectionContent name="content">
 			<j:VGroup>
 				<local:CKEditor id="myEditor"/>
-				<j:Button text="Data Alert" click="getData()"/>
+				<j:HGroup>
+					<j:Button text="Data Alert" click="getData()"/>
+					<j:Button text="init" click="init()"/>
+				</j:HGroup>
 			</j:VGroup>
 	   </j:SectionContent>
     </j:ApplicationMainContent>

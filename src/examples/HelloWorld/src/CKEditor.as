@@ -59,5 +59,14 @@ package
 			return myEditor.getData();
 		}
 
+		public function set data(value:String):void
+		{
+			if (!myEditor)
+			{
+				return;
+			}
+			myEditor.setData(value);
+		}
+
 	}
 }
