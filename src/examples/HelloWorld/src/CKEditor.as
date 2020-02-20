@@ -30,13 +30,34 @@ package
 
 		override public function addedToParent():void 
 		{ 
+			if (isNaN(width) || width <= 0)
+			{
+				width = 600;
+			}
+			if (isNaN(height) || height <= 0)
+			{
+				height = 400;
+			}
 			super.addedToParent(); 
 			var div:Div = new Div();
 			div.percentHeight = 100;
 			div.percentWidth = 100;
 			div.element.setAttribute("contenteditable", true);
 			CKEDITOR.config.startupFocus = true;
+			CKEDITOR.disableAutoInline = true;
+			CKEDITOR.config.starupOutlineBlocks = true;
 			addElement(div);
+			myEditor = CKEDITOR.inline(div.element);
 		} 
+
+		public function get data():String
+		{
+			if (!myEditor)
+			{
+				return "";
+			}
+			return myEditor.getData();
+		}
+
 	}
 }

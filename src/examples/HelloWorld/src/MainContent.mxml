@@ -3,10 +3,17 @@
     						 xmlns:j="library://ns.apache.org/royale/jewel"
     						 xmlns:local="*">
 
+	<fx:Script><![CDATA[			
+		private function getData():void
+		{
+			alert("data: " + myEditor.data);
+		}
+	]]></fx:Script>
     <j:ApplicationMainContent hasTopAppBar="true" hasFooterBar="true" selectedContent="content">
        <j:SectionContent name="content">
 			<j:VGroup>
-				<local:CKEditor width="600" height="400" />
+				<local:CKEditor id="myEditor"/>
+				<j:Button text="Data Alert" click="getData()"/>
 			</j:VGroup>
 	   </j:SectionContent>
     </j:ApplicationMainContent>

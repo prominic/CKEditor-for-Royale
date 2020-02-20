@@ -8,14 +8,6 @@
 	<j:valuesImpl>
 		<js:SimpleCSSValuesImpl />
 	</j:valuesImpl>
-	<!--<j:initialView>
-		<js:View>
-			<js:VContainer>
-				<js:Label text="Hello World!" />
-				<local:CKEditor id="myEditor" width="600" height="400"/>
-			</js:VContainer>
-		</js:View>
-	</j:initialView>-->
 	<j:initialView>
 		<local:MainContent />
 	</j:initialView>
