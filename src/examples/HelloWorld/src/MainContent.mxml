@@ -16,7 +16,7 @@
 	]]></fx:Script>
     <j:ApplicationMainContent hasTopAppBar="true" hasFooterBar="true" selectedContent="content">
        <j:SectionContent name="content">
-			<j:VGroup>
+			<j:VGroup style="padding: 20px">
 				<local:CKEditor id="myEditor"/>
 				<j:HGroup>
 					<j:Button text="Data Alert" click="getData()"/>

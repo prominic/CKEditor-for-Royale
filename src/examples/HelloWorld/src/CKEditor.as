@@ -40,6 +40,7 @@ package
 			}
 			super.addedToParent(); 
 			var div:Div = new Div();
+			div.element.style.outline = "1px solid #d1d1d1";
 			div.percentHeight = 100;
 			div.percentWidth = 100;
 			div.element.setAttribute("contenteditable", true);
