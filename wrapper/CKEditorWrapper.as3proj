@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+  <output>
+    <movie fps="60"/>
+    <movie height="600"/>
+    <movie disabled="False"/>
+    <movie background="#FFFFFF"/>
+    <movie path="bin-debug/CKEditorWrapper.swf"/>
+    <movie width="800"/>
+    <movie platform="Flash Player"/>
+    <movie version="11"/>
+    <movie input=""/>
+  </output>
+  &lt;!-- Other classes to be compiled into your SWF --&gt;
+  <jsOutput>
+    <option path=""/>
+  </jsOutput>
+  <classpaths>
+    <class path="src"/>
+  </classpaths>
+  <moonshineResourcePaths></moonshineResourcePaths>
+  <moonshineNativeExtensionPaths></moonshineNativeExtensionPaths>
+  <build>
+    <option showActionScriptWarnings="True"/>
+    <option compilerConstants=""/>
+    <option locale=""/>
+    <option sourceMap="False"/>
+    <option benchmark="False"/>
+    <option showDeprecationWarnings="True"/>
+    <option antBuildPath="build/build.xml"/>
+    <option showUnusedTypeSelectorWarnings="True"/>
+    <option showBindingWarnings="True"/>
+    <option additional="+configname=flex"/>
+    <option accessible="False"/>
+    <option useNetwork="True"/>
+    <option allowSourcePathOverlap="False"/>
+    <option useResourceBundleMetadata="True"/>
+    <option strict="True"/>
+    <option warnings="True"/>
+    <option es="False"/>
+    <option verboseStackTraces="False"/>
+    <option loadConfig=""/>
+    <option linkReport=""/>
+    <option customSDK=""/>
+    <option optimize="False"/>
+    <option staticLinkRSL="False"/>
+  </build>
+  <mavenBuild>
+    <option mavenBuildPath=""/>
+    <option settingsFilePath=""/>
+    <option commandLine=""/>
+    <actions>
+      <action action="install" actionName="Build"/>
+      <action action="clean" actionName="Clean"/>
+      <action action="clean install" actionName="Clean and Build"/>
+      <action action="war:exploded" actionName="Exploded"/>
+    </actions>
+  </mavenBuild>
+  <includeLibraries></includeLibraries>
+  <libraryPaths></libraryPaths>
+  <externalLibraryPaths></externalLibraryPaths>
+  <rslPaths></rslPaths>
+  <intrinsics>
+    <element path="Library/AS3/frameworks/Flex4"/>
+    <element path="Library\AS3\frameworks\Flex4"/>
+  </intrinsics>
+  <library></library>
+  <compileTargets>
+    <compile path="src/CKEditor.as"/>
+  </compileTargets>
+  <hiddenPaths></hiddenPaths>
+  <preBuildCommand>null</preBuildCommand>
+  <postBuildCommand alwaysRun="False">null</postBuildCommand>
+  <trustSVNCertificate>False</trustSVNCertificate>
+  <options>
+    <option defaultBuildTargets=""/>
+    <option visualEditorExportPath=""/>
+    <option isPrimeFacesVisualEditor="False"/>
+    <option isRoyale="True"/>
+    <option showHiddenPaths="False"/>
+    <option testMovie=""/>
+    <option testMovieCommand=""/>
+    <option isExportedToExistingSource="False"/>
+  </options>
+  <moonshineRunCustomization>
+    <option projectType="2"/>
+    <option targetPlatform="5"/>
+    <option urlToLaunch=""/>
+    <option launchMethod="Simulator"/>
+    <option customUrlToLaunch=""/>
+    <option deviceSimulator="null"/>
+    <deviceSimulator>Apple iPad</deviceSimulator>
+    <certAndroid>null</certAndroid>
+    <certIos>null</certIos>
+    <certIosProvisioning>null</certIosProvisioning>
+  </moonshineRunCustomization>
+</project>
