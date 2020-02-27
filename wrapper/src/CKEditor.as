@@ -52,7 +52,8 @@ package
 			addElement(div);
 			myEditor = CKEDITOR.inline(div.element);
 		} 
-
+		
+		[Bindable]
 		public function get data():String
 		{
 			if (!myEditor)
@@ -70,6 +71,5 @@ package
 			}
 			myEditor.setData(value);
 		}
-
 	}
 }
