@@ -45,8 +45,8 @@ package
 			CKEDITOR.config.startupFocus = true;
 			CKEDITOR.disableAutoInline = true;
 			
-			addElement(ckeditorDiv);
 			addElement(ckEditorToolbar);
+			addElement(ckeditorDiv);
 			
 			myEditor = CKEDITOR.inline(ckeditorDiv.element, {
 				  extraPlugins: 'sharedspace,sourcedialog',
