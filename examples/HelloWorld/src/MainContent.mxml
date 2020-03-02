@@ -17,7 +17,7 @@
     <j:ApplicationMainContent hasTopAppBar="true" hasFooterBar="true" selectedContent="content">
        <j:SectionContent name="content">
 			<j:HGroup gap="20" style="margin-left: 20px">
-				<local:CKEditor id="myEditor"/>
+				<local:CKEditor id="myEditor" width="500"/>
 				<j:HGroup>
 					<j:Button text="Data Alert" click="getData()"/>
 					<j:Button text="init" click="init()"/>
