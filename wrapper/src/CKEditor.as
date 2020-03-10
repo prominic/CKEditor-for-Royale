@@ -43,6 +43,7 @@ package
 			var ckEditorToolbar:Div = new Div();
 			
 			CKEDITOR.config.startupFocus = true;
+			CKEDITOR.config.allowedContent = true;
 			CKEDITOR.disableAutoInline = true;
 			
 			addElement(ckeditorDiv);
